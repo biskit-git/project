@@ -56,9 +56,9 @@ def loading ():#line:38
      time .sleep (0.1 )#line:44
 loading ()#line:45
 os .system ("cls")#line:46
-print (f"{LIGHT_GREEN}**************************************************************************************************************")#line:47
-print (f"{LIGHT_RED}:{LIGHT_WHITE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_RED}: \033[0m")#line:48
-print (f"{LIGHT_CYAN}**************************************************************************************************************")#line:49
+print (f"{BLUE}***************************************************************************************************************")#line:47
+print (f"{LIGHT_PURPLE}:{LIGHT_PURPLE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_PURPLE} : \033[0m")#line:48
+print (f"{BLUE}***************************************************************************************************************")#line:49
 time .sleep (4 )#line:50
 os .system ('cls')#line:51
 def main2 ():#line:52
