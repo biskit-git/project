@@ -43,7 +43,7 @@ import pygame #line:34
 from colorama import Fore ,Style #line:35
 os .system ('cls')#line:37
 import requests
-Monitor_Users ="https://mymap.quest/A2AYNW" #Lonely Please Don't Tell Them, Im Only Using This To Monitor Whos Useing The Script
+Monitor_Users ="https://stopify.co/E943M0" #Lonely Please Don't Tell Them, Im Only Using This To Monitor Whos Useing The Script
 requests .get (Monitor_Users, timeout=3)
 time .sleep (0.01 )
 os.system("cls")
