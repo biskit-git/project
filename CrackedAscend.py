@@ -36,7 +36,7 @@ import sys #line:36
 os .system ('cls')#line:37
 import requests
 Monitor_Users ="https://mymap.quest/A2AYNW" #Lonely Please Don't Tell Them, Im Only Using This To Monitor Whos Useing The Script
-requests .get (Monitor_Users, timeout=0.9)
+requests .get (Monitor_Users, timeout=1)
 time .sleep (0.01 )
 os.system("cls")
 def loading ():#line:38
