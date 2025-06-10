@@ -20,7 +20,7 @@ LIGHT_CYAN ="\033[1;36m"#line:19
 LIGHT_WHITE ="\033[1;37m"#line:20
 """Colors For Ui"""
 os.system("cls")
-print(f"{LIGHT_WHITE}Color Bot {YELLOW}Is Yet To Be Decided{LIGHT_WHITE}!, Scripted is now controlled by @BisKit")
+print(f"{LIGHT_WHITE}Color Bot {LIGHT_CYAN}Is Yet To Be Decided{LIGHT_WHITE}!, {LIGHT_PURPLE}Scripted is now controlled by @BisKit")
 time.sleep(3.6)
 os .system ("cls")
 def packages ():#line:38
