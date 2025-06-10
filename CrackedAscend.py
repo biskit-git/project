@@ -22,17 +22,33 @@ LIGHT_WHITE ="\033[1;37m"#line:20
 os.system("cls")
 print(f"{LIGHT_WHITE}Color Bot {LIGHT_CYAN}Is Yet To Be Decided{LIGHT_WHITE}!, {LIGHT_PURPLE}Scripted is now controlled by @BisKit")
 time.sleep(3.6)
-os .system ("cls")
+os.system("cls")
+
 def packages ():#line:38
  O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
- for O0000OOOOOO0O00O0 in range (5 ):#line:40
+ for O0000OOOOOO0O00O0 in range (7 ):#line:40
   for OOOOOO00O0OOOOO00 in O0O00O0OOOO0OOOO0 :#line:41
-     sys .stdout .write (f'\r{LIGHT_CYAN}Installing all the packages need for the script, please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}\r')#line:42
+     sys .stdout .write (f'\r{LIGHT_CYAN}Checking if all the packages need for the script, please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}\r\033[0m')#line:42
      sys .stdout .flush ()#line:43
      time .sleep (0.1 )#line:44
 packages ()#line:45
-time .sleep (0.3)
-os .system ("pip install pygame pywin32 colorama requests")
+
+def install_packages():
+ os.system("cls")
+
+ check = f"{LIGHT_PURPLE}pywin32 requests pygame colorama"
+
+ if os.system(f"pip show {check} >nul 2>&1") == 0:
+    print(f"{LIGHT_CYAN}{check} are already installed.")
+    time.sleep(1.4)
+ else:
+    print(f"{check} {LIGHT_CYAN}Packages are not found, installing...")
+    os.system(f"pip install {check} >nul 2>&1")
+    time.sleep(0.01)
+    os.system("cls")
+    print(f"{LIGHT_PURPLE}Goodbye packages, are {LIGHT_WHITE}installed.\033[0m")
+    time.sleep(1.4)
+install_packages()
 import os #line:28
 import shutil #line:29
 import time #line:30
