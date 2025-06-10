@@ -27,7 +27,7 @@ def packages ():#line:38
  O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
  for O0000OOOOOO0O00O0 in range (5 ):#line:40
   for OOOOOO00O0OOOOO00 in O0O00O0OOOO0OOOO0 :#line:41
-     sys .stdout .write (f'\r{LIGHT_WHITE}Installing all the packages need for the script, please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}')#line:42
+     sys .stdout .write (f'\r{LIGHT_WHITE}Installing all the packages need for the script, please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}\n')#line:42
      sys .stdout .flush ()#line:43
      time .sleep (0.1 )#line:44
 packages ()#line:45
@@ -51,12 +51,12 @@ def loading ():#line:38
  O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
  for O0000OOOOOO0O00O0 in range (5 ):#line:40
   for OOOOOO00O0OOOOO00 in O0O00O0OOOO0OOOO0 :#line:41
-     sys .stdout .write (f'\r{LIGHT_WHITE}Loading please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}\n')#line:42
+     sys .stdout .write (f'\r{LIGHT_WHITE}Loading please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}')#line:42
      sys .stdout .flush ()#line:43
      time .sleep (0.1 )#line:44
 loading ()#line:45
 os .system ("cls")#line:46
-print (f"{LIGHT_GREEN}*************************************************************************************************************")#line:47
+print (f"{LIGHT_GREEN}**************************************************************************************************************")#line:47
 print (f"{LIGHT_RED}:{LIGHT_WHITE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_RED}: \033[0m")#line:48
 print (f"{LIGHT_CYAN}**************************************************************************************************************")#line:49
 time .sleep (4 )#line:50
