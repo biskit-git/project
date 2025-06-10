@@ -69,13 +69,13 @@ def main2 ():#line:52
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
 {BLUE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:58
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:59
-  O00OOO0O0O000O0O0 =input (f"""{LIGHT_RED}['\033[0m{LIGHT_PURPLE}Enter Password To Access{LIGHT_RED}:{LIGHT_GREEN} """)#line:60
+  O00OOO0O0O000O0O0 =input (f"""{LIGHT_CYAN}['\033[0m{LIGHT_PURPLE}Enter Password To {LIGHT_CYAN}Access{LIGHT_PURPLE}:{LIGHT_GREEN} """)#line:60
   if O00OOO0O0O000O0O0 =="9001":#line:61
     print ("")#line:62
     break #line:63
   else :#line:64
     os .system ("cls")#line:65
-    print (f"{RED}Wrong Password, \033[0m{LIGHT_WHITE}['{1 - O000O0O00O0OO0000}{LIGHT_WHITE}'] \033[0m{YELLOW}Attempts Left Untill Exiting, Cracked Ascend")#line:66
+    print (f"{LIGHT_CYAN}Wrong Password, \033[0m{LIGHT_WHITE}['{LIGHT_PURPLE}{1 - O000O0O00O0OO0000}{LIGHT_WHITE}'] \033[0m{LIGHT_PURPLE}Attempts Left Untill Exiting, Cracked Ascend")#line:66
  else :#line:67
     os .system ("cls")#line:68
     print (f"""{PURPLE}                     
