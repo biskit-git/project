@@ -21,7 +21,7 @@ LIGHT_WHITE ="\033[1;37m"#line:20
 """Colors For Ui"""
 os.system("cls")
 print(f"{LIGHT_WHITE}Color Bot {YELLOW}Is Yet To Be Decided{LIGHT_WHITE}!, Scripted is now controlled by @BisKit")
-time.sleep(2.9)
+time.sleep(3.6)
 os .system ("cls")
 def packages ():#line:38
  O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
