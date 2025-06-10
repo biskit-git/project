@@ -62,7 +62,7 @@ def main2 ():#line:52
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
-         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:58
+{BLUE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:58
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:59
   O00OOO0O0O000O0O0 =input (f"""{LIGHT_RED}['\033[0m{LIGHT_PURPLE}Enter Password To Access{LIGHT_RED}:{LIGHT_GREEN} """)#line:60
   if O00OOO0O0O000O0O0 =="9001":#line:61
@@ -108,7 +108,7 @@ def display_banner (O0O00O0OOOOOOO0OO ,OO0O00OO0OO000O0O ,OOO0O0OOOO0OO0000 ,OOO
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
-         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:104
+{BLUE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:104
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:105
 def mouse_motion ():#line:106
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:107
