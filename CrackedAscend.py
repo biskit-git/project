@@ -68,7 +68,7 @@ def loading ():#line:66
      time .sleep (0.1 )#line:72
 loading ()#line:73
 os .system ("cls")#line:74
-print (f"{BLUE}***************************************************************************************************************")#line:75
+print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:75
 print (f"{LIGHT_PURPLE}:{LIGHT_PURPLE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_PURPLE} : \033[0m")#line:76
 print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:77
 time .sleep (4 )#line:78
@@ -79,7 +79,7 @@ def main2 ():#line:80
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
-{BLUE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:86
+{LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:86
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:87
   OO00O0O0O0OOO00O0 =input (f"""{LIGHT_CYAN}['\033[0m{LIGHT_PURPLE}Enter Password To {LIGHT_CYAN}Access{LIGHT_PURPLE}:{LIGHT_GREEN} """)#line:88
   if OO00O0O0O0OOO00O0 =="9001":#line:89
@@ -125,7 +125,7 @@ def display_banner (OOOOOO0O0OO0OOO00 ,OOO0O0OO00OO0OOOO ,OO00OO0OOOO0000OO ,O0O
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
-{BLUE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:132
+{LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:132
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:133
 def mouse_motion ():#line:134
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:135
