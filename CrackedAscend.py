@@ -23,17 +23,14 @@ os .system ("cls")#line:22
 print (f"{LIGHT_WHITE}Color Bot {LIGHT_CYAN}Is Yet To Be Decided{LIGHT_WHITE}!, {LIGHT_PURPLE}Scripted is now controlled by {LIGHT_WHITE}@BisKit\033[0m")#line:23
 time .sleep (3.6 )#line:24
 os .system ("cls")#line:25
-def packages ():#line:26
+def install_packages ():#line:34
  O000O0OOO0OO00O00 =['/','-','\\','|']#line:27
  for OO0O0O000OOOOO0OO in range (5 ):#line:28
   for O0OOOOOOO0O00OOOO in O000O0OOO0OO00O00 :#line:29
-     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages need for the script,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{O0OOOOOOO0O00OOOO}\r\033[0m')#line:30
+     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{O0OOOOOOO0O00OOOO}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
      time .sleep (0.1 )#line:32
-packages ()#line:33
-def install_packages ():#line:34
- os.system("cls")
- os.system("pip install pygame pywin32 colorama requests")
+ os.system(f"{LIGHT_PURPLE}pip install {LIGHT_CYAN}pygame pywin32 colorama requests >nul 2>&1")
  time.sleep(0.01)
 install_packages ()#line:47
 import os #line:48
