@@ -25,7 +25,7 @@ time .sleep (3.6 )#line:24
 os .system ("cls")#line:25
 def packages ():#line:26
  O00OOO0000OOOOOOO =['/','-','\\','|']#line:27
- for OO000OO0OO000OOO0 in range (7 ):#line:28
+ for OO000OO0OO000OOO0 in range (5 ):#line:28
   for O000OO0OOOO0O0OOO in O00OOO0000OOOOOOO :#line:29
      sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages need for the script,{LIGHT_CYAN} please wait...  {LIGHT_PURPLE}{O000OO0OOOO0O0OOO}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
@@ -116,9 +116,9 @@ def center_text (OOOOOO00OO00OOOOO ):#line:113
     return '\n'.join (OO000O00O0OOOO0O0 )#line:116
 def load_settings ():#line:117
     os.system("cls")
-    print (f"{LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] ")#line:118
-    print (f"{LIGHT_CYAN}Second Choice {LIGHT_WHITE}[{LIGHT_PURPLE}2{LIGHT_WHITE}] {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24")#line:119
-    O0O0OO000OOO000O0 =input (f"{LIGHT_PURPLE}What Jitter Setting Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:120
+    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] ")#line:118
+    print (f"{LIGHT_WHITE}Pick {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24 {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")#line:119
+    O0O0OO000OOO000O0 =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:120
     if O0O0OO000OOO000O0 =="1":#line:121
        return (24 ,24 ,24 ,28 )#line:122
     else :#line:123
@@ -151,6 +151,19 @@ def wait_for_controller ():#line:139
     print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit \033[1;36m@Lonely\033[0m")#line:151
     print (f"                                                ['{LIGHT_PURPLE}Jitter Activated'\033[0m]")#line:152
     return OO0OOOO0OO0OOOOOO #line:153
+
+def sleep():
+   os.system("cls")
+   print(f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}]")
+   print(f"{LIGHT_WHITE}Pick {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24 {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")
+   sleep_choice = input(f"\n{YELLOW}Choose a, {LIGHT_WHITE}option: ")
+   if sleep_choice == "2":
+    return(0.01)
+   else:
+    return(0.013)
+
+time_sleep = sleep()
+
 try :#line:155
  move_right ,move_left ,move_up ,move_down =load_settings ()#line:156
  current_settings =(move_right ,move_left ,move_up ,move_down )#line:157
@@ -175,6 +188,6 @@ try :#line:155
             move_right ,move_left ,move_up ,move_down =updated_settings #line:176
             current_settings =updated_settings #line:177
             display_banner (move_right ,move_left ,move_up ,move_down )#line:178
-    time .sleep (0.013 )#line:179
+    time .sleep (time_sleep)#line:179
 except KeyboardInterrupt :#line:180
  print ()
