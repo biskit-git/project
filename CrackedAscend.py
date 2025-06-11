@@ -132,7 +132,7 @@ def display_banner (OOOO0OOOO0OO000O0 ,O000O0OO0O0OO0OO0 ,O00OOOO0OO00O0O00 ,O0O
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:133
 def mouse_motion ():#line:134
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:135
-    time .sleep (0.006 )#line:136
+    time .sleep (0.0037 )#line:136
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,-move_left ,-move_up ,-29 ,-29 )#line:137
 def monitor_settings (O0OO0OOOOO00OO000 ):#line:138
     return O0OO0OOOOO00OO000 #line:139
