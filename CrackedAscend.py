@@ -63,7 +63,7 @@ def loading ():#line:62
  O00OOO0OO0OO0OOOO =['/','-','\\','|']#line:63
  for OOOO0OO00O0OOOOO0 in range (5 ):#line:64
   for OO0000O0OOO0O0OOO in O00OOO0OO0OO0OOOO :#line:65
-     sys .stdout .write (f'\r{LIGHT_CYAN}Loading {LIGHT_WHITE}please wait{LIGHT_PURPLE}...  {LIGHT_PURPLE}{OO0000O0OOO0O0OOO}')#line:66
+     sys .stdout .write (f'\r{LIGHT_CYAN}Loading {LIGHT_WHITE}please wait{LIGHT_CYAN}...  {LIGHT_PURPLE}{OO0000O0OOO0O0OOO}')#line:66
      sys .stdout .flush ()#line:67
      time .sleep (0.1 )#line:68
 loading ()#line:69
