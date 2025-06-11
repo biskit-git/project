@@ -90,12 +90,13 @@ def main2 ():#line:76
     print (f"{LIGHT_CYAN}Wrong Password, \033[0m{LIGHT_WHITE}['{LIGHT_PURPLE}{1 - OO00O000O00OO00OO}{LIGHT_WHITE}'] \033[0m{LIGHT_PURPLE}Attempts Left Untill Exiting, Cracked Ascend")#line:90
  else :#line:91
     os .system ("cls")#line:92
-    print (f"""{PURPLE}                     
+    print (f"""{LIGHT_GREEN}                     
  _       _               
 | |_ _ _| |_ ___ _ _ ___ 
-| . | | | . | -_| | | -_|
-|___|___|___|___|_  |___|
+{LIGHT_CYAN}| . | | | . | -_| | | -_|
+{LIGHT_PURPLE}|___|___|___|___|_  |___|
                 |___|    
+
 {LIGHT_WHITE}Used All Password Attempts...\n""")#line:99
     time .sleep (2.1 )#line:100
     OOOOO0OOO0O00OO00 =quit ()#line:101
