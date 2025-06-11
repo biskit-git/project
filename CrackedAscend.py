@@ -34,12 +34,12 @@ packages ()#line:33
 def install_packages ():#line:34
  os .system ("cls")#line:35
  OOO0OO00000O00OOO =f"{LIGHT_PURPLE}pywin32 requests pygame colorama"#line:36
- if os .system (f"pip show {OOO0OO00000O00OOO} >nul 2>&1")==0 :#line:37
+ if os .system (f"pip show {OOO0OO00000O00OOO}")==0 :#line:37
     print (f"{OOO0OO00000O00OOO},{LIGHT_CYAN} are already installed.")#line:38
     time .sleep (1.4 )#line:39
  else :#line:40
     print (f"{OOO0OO00000O00OOO} {LIGHT_CYAN}Packages are not found, {LIGHT_PURPLE}installing...")#line:41
-    os .system (f"pip install {OOO0OO00000O00OOO} >nul 2>&1")#line:42
+    os .system (f"pip install {OOO0OO00000O00OOO}")#line:42
     time .sleep (0.01 )#line:43
     os .system ("cls")#line:44
     print (f"{LIGHT_PURPLE}Goodbye packages, are {LIGHT_WHITE}installed.\033[0m")#line:45
