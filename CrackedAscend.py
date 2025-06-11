@@ -115,6 +115,7 @@ def center_text (OOOOOO00OO00OOOOO ):#line:113
     OO000O00O0OOOO0O0 =[O00OOO0000O000OO0 .center (O00000OOOO0O00O0O )for O00OOO0000O000OO0 in OOOOOO00OO00OOOOO .split ('\n')]#line:115
     return '\n'.join (OO000O00O0OOOO0O0 )#line:116
 def load_settings ():#line:117
+    os.system("cls")
     print (f"{LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] ")#line:118
     print (f"{LIGHT_CYAN}Second Choice {LIGHT_WHITE}[{LIGHT_PURPLE}2{LIGHT_WHITE}] {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24")#line:119
     O0O0OO000OOO000O0 =input (f"{LIGHT_PURPLE}What Jitter Setting Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:120
