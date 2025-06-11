@@ -63,7 +63,7 @@ def loading ():#line:66
  O0O0O00O000OO0O0O =['/','-','\\','|']#line:67
  for O0OO0OO0O0OOOO0OO in range (5 ):#line:68
   for OOO000O0OO0OOOO0O in O0O0O00O000OO0O0O :#line:69
-     sys .stdout .write (f'\r{LIGHT_CYAN}Loading {LIGHT_WHITE}please wait{LIGHT_CYAN}...  {LIGHT_PURPLE}{OOO000O0OO0OOOO0O}')#line:70
+     sys .stdout .write (f'\r{LIGHT_CYAN}Loading {LIGHT_WHITE}please wait{LIGHT_PURPLE}...  {LIGHT_PURPLE}{OOO000O0OO0OOOO0O}')#line:70
      sys .stdout .flush ()#line:71
      time .sleep (0.1 )#line:72
 loading ()#line:73
@@ -115,11 +115,14 @@ def center_text (OO0OO000O0OO0O000 ):#line:117
     OO00000O00OOO00OO =[OOO0O000OO0OOOOO0 .center (O0O00OOOOO00000OO )for OOO0O000OO0OOOOO0 in OO0OO000O0OO0O000 .split ('\n')]#line:119
     return '\n'.join (OO00000O00OOO00OO )#line:120
 def load_settings ():#line:121
-    O0OO0O0O00OOOO00O =24 #line:122
-    O0OOO00000OO0OOO0 =24 #line:123
-    OO0000OOO00O0O0O0 =24 #line:124
-    OO000O00OO0O0OOOO =28 #line:125
-    return (O0OO0O0O00OOOO00O ,O0OOO00000OO0OOO0 ,OO0000OOO00O0O0O0 ,OO000O00OO0O0OOOO )#line:126
+    print(f"{LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] ")
+    print(f"{LIGHT_CYAN}Second Choice {LIGHT_WHITE}[{LIGHT_PURPLE}2{LIGHT_WHITE}] {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24")
+    choose = input(f"{LIGHT_PURPLE}What Jitter Setting Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")
+    if choose == "1":
+       return(24,24,24,28)
+    else:
+       return(20,20,20,24)
+
 def display_banner (OOOOOO0O0OO0OOO00 ,OOO0O0OO00OO0OOOO ,OO00OO0OOOO0000OO ,O0O0OOO00O0O00O00 ):#line:127
   print (f"""  {LIGHT_PURPLE}                                                            
           _____             _         _    _____                   _ 
@@ -144,10 +147,11 @@ def wait_for_controller ():#line:140
     O00O00OOO0OOO000O .init ()#line:148
     clear_screen ()#line:149
     display_banner (move_right ,move_left ,move_up ,move_down )#line:150
-    print (f"\n{LIGHT_WHITE}                   Works For {YELLOW}Xbox {LIGHT_WHITE}+ {LIGHT_PURPLE}Ps4/5                             {LIGHT_CYAN}LT + LR{LIGHT_WHITE} or {LIGHT_PURPLE}L1 + L2\033[0m")#line:151
+    print (f"\n{LIGHT_WHITE}                   Works For {YELLOW}Xbox {LIGHT_WHITE}+ {LIGHT_PURPLE}Ps4/5                             \033[0;36mLT + LR{LIGHT_WHITE} or \033[0;35mL1 + L2\033[0m")#line:151
     print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit \033[1;36m@Lonely\033[0m")#line:152
     print (f"                                                ['{LIGHT_PURPLE}Jitter Activated'\033[0m]")#line:153
     return O00O00OOO0OOO000O #line:154
+
 try :#line:155
  move_right ,move_left ,move_up ,move_down =load_settings ()#line:156
  current_settings =(move_right ,move_left ,move_up ,move_down )#line:157
