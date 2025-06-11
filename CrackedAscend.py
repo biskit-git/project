@@ -33,7 +33,7 @@ def packages ():#line:26
 packages ()#line:33
 def install_packages ():#line:34
  os .system ("cls")#line:35
- OOO0OO00000O00OOO =f"{LIGHT_PURPLE}pywin32api requests pygame colorama"#line:36
+ OOO0OO00000O00OOO =f"{LIGHT_PURPLE}pywin32 requests pygame colorama"#line:36
  if os .system (f"pip show {OOO0OO00000O00OOO} >nul 2>&1")==0 :#line:37
     print (f"{OOO0OO00000O00OOO},{LIGHT_CYAN} are already installed.")#line:38
     time .sleep (1.4 )#line:39
