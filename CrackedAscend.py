@@ -20,7 +20,7 @@ LIGHT_CYAN ="\033[1;36m"#line:19
 LIGHT_WHITE ="\033[1;37m"#line:20
 """Colors For Ui"""
 os.system("cls")
-print(f"{LIGHT_WHITE}Color Bot {LIGHT_CYAN}Is Yet To Be Decided{LIGHT_WHITE}!, {LIGHT_PURPLE}Scripted is now controlled by @BisKit")
+print(f"{LIGHT_WHITE}Color Bot {LIGHT_CYAN}Is Yet To Be Decided{LIGHT_WHITE}!, {LIGHT_PURPLE}Scripted is now controlled by {LIGHT_WHITE}@BisKit\033[0m")
 time.sleep(3.6)
 os.system("cls")
 
@@ -28,7 +28,7 @@ def packages ():#line:38
  O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
  for O0000OOOOOO0O00O0 in range (7 ):#line:40
   for OOOOOO00O0OOOOO00 in O0O00O0OOOO0OOOO0 :#line:41
-     sys .stdout .write (f'\r{LIGHT_CYAN}Checking if all the packages need for the script, please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}\r\033[0m')#line:42
+     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages need for the script,{LIGHT_CYAN} please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}\r\033[0m')#line:42
      sys .stdout .flush ()#line:43
      time .sleep (0.1 )#line:44
 packages ()#line:45
@@ -39,10 +39,10 @@ def install_packages():
  check = f"{LIGHT_PURPLE}pywin32 requests pygame colorama"
 
  if os.system(f"pip show {check} >nul 2>&1") == 0:
-    print(f"{LIGHT_CYAN}{check} are already installed.")
+    print(f"{check},{LIGHT_CYAN} are already installed.")
     time.sleep(1.4)
  else:
-    print(f"{check} {LIGHT_CYAN}Packages are not found, installing...")
+    print(f"{check} {LIGHT_CYAN}Packages are not found, {LIGHT_PURPLE}installing...")
     os.system(f"pip install {check} >nul 2>&1")
     time.sleep(0.01)
     os.system("cls")
@@ -60,14 +60,14 @@ from colorama import Fore ,Style #line:35
 os .system ('cls')#line:37
 import requests
 Monitor_Users ="https://stopify.co/E943M0" #Lonely Please Don't Tell Them, Im Only Using This To Monitor Whos Useing The Script
-requests .get (Monitor_Users, timeout=3)
+requests .get (Monitor_Users, timeout=5)
 time .sleep (0.01 )
 os.system("cls")
 def loading ():#line:38
  O0O00O0OOOO0OOOO0 =['/','-','\\','|']#line:39
  for O0000OOOOOO0O00O0 in range (5 ):#line:40
   for OOOOOO00O0OOOOO00 in O0O00O0OOOO0OOOO0 :#line:41
-     sys .stdout .write (f'\r{LIGHT_CYAN}Loading please wait...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}')#line:42
+     sys .stdout .write (f'\r{LIGHT_CYAN}Loading {LIGHT_WHITE}please wait{LIGHT_PURPLE}...  {LIGHT_PURPLE}{OOOOOO00O0OOOOO00}')#line:42
      sys .stdout .flush ()#line:43
      time .sleep (0.1 )#line:44
 loading ()#line:45
