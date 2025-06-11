@@ -117,7 +117,7 @@ def center_text (OO0O00O0OO0O000O0 ):#line:113
 def load_settings ():#line:117
     os .system ("cls")#line:118
     print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] ")#line:119
-    print (f"{LIGHT_WHITE}Pick {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24 {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")#line:120
+    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}original jitter{LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")#line:120
     O00000000OO00OO00 =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:121
     if O00000000OO00OO00 =="1":#line:122
        return (24 ,24 ,24 ,28 )#line:123
@@ -154,7 +154,7 @@ def wait_for_controller ():#line:139
 def sleep ():#line:155
    os .system ("cls")#line:156
    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}]")#line:157
-   print (f"{LIGHT_WHITE}Pick {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24 {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")#line:158
+   print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}original jitter{LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")#line:158
    O0O0000OO0OOO00O0 =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:159
    if O0O0000OO0OOO00O0 =="2":#line:160
     return (0.01 )#line:161
