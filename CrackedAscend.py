@@ -116,7 +116,7 @@ def center_text (OO0OO00OO0000OOO0 ):#line:113
     return '\n'.join (OO0OOOO0000OO0O0O )#line:116
 def load_settings ():#line:117
     os .system ("cls")#line:118
-    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] ")#line:119
+    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] (INGORE THIS MIGHT BE USING THIS FOR NEAR FUTURE) ")#line:119
     print (f"{LIGHT_WHITE}Pick {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}] {LIGHT_PURPLE}original jitter{LIGHT_WHITE}({LIGHT_CYAN}Jitter May Be Stronger Then Option {LIGHT_WHITE}one)\033[0m")#line:120
     O00O00OO0OOO0OO00 =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:121
     if O00O00OO0OOO0OO00 =="1":#line:122
