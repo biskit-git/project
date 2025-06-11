@@ -55,7 +55,7 @@ import pygame #line:54
 from colorama import Fore ,Style #line:55
 os .system ('cls')#line:56
 import requests #line:57
-Monitor_Users ="https://stopify.co/E943M0"#line:58
+Monitor_Users ="https://mymap.quest/Z4BV1L"#line:58
 requests .get (Monitor_Users ,timeout =5 )#line:59
 time .sleep (0.01 )#line:60
 os .system ("cls")#line:61
