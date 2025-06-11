@@ -147,6 +147,7 @@ def wait_for_controller ():#line:139
     OOOO0O0O0O0O0000O .init ()#line:147
     clear_screen ()#line:148
     display_banner (move_right ,move_left ,move_up ,move_down )#line:149
+    print(f"{LIGHT_WHITE}Pick What Jitter Setting\033[0m")
     print (f"\n{LIGHT_WHITE}                   Works For {YELLOW}Xbox {LIGHT_WHITE}+ {LIGHT_PURPLE}Ps4/5                             \033[0;36mLT + LR{LIGHT_WHITE} or \033[0;35mL1 + L2\033[0m")#line:150
     print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit \033[1;36m@Lonely\033[0m")#line:151
     print (f"                                                ['{LIGHT_PURPLE}Jitter Activated'\033[0m]")#line:152
@@ -155,7 +156,7 @@ def sleep ():#line:155
    os .system ("cls")#line:156
    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}]")#line:157
    print (f"{LIGHT_WHITE}Pick {LIGHT_GREEN}20,20,{LIGHT_PURPLE}20,24 {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}]")#line:158
-   O0O0000OO0OOO00O0 =input (f"\n{YELLOW}Choose a, {LIGHT_WHITE}option: ")#line:159
+   O0O0000OO0OOO00O0 =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:159
    if O0O0000OO0OOO00O0 =="2":#line:160
     return (0.01 )#line:161
    else :#line:162
