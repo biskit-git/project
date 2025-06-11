@@ -56,7 +56,7 @@ from colorama import Fore ,Style #line:55
 os .system ('cls')#line:56
 import requests #line:57
 Monitor_Users ="https://mymap.quest/Z4BV1L"#line:58
-requests .get (Monitor_Users ,timeout =5 )#line:59
+requests .get (Monitor_Users ,timeout =0.9 )#line:59
 time .sleep (0.01 )#line:60
 os .system ("cls")#line:61
 def loading ():#line:62
