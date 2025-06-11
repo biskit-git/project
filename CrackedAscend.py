@@ -30,7 +30,7 @@ def install_packages ():#line:34
      sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{O0OOOOOOO0O00OOOO}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
      time .sleep (0.1 )#line:32
- os.system(f"{LIGHT_PURPLE}pip install {LIGHT_CYAN}pygame pywin32 colorama requests >nul 2>&1")
+ os.system(f"pip install pygame pywin32 colorama requests >nul 2>&1")
  time.sleep(0.01)
 install_packages ()#line:47
 import os #line:48
