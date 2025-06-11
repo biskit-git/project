@@ -27,7 +27,7 @@ def packages ():#line:26
  O00OOO0000OO00000 =['/','-','\\','|']#line:27
  for O0O0OO00O0O0000O0 in range (5 ):#line:28
   for OO0OO00O0OO0O0OO0 in O00OOO0000OO00000 :#line:29
-     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages need for the script,{LIGHT_CYAN} please wait...  {LIGHT_PURPLE}{OO0OO00O0OO0O0OO0}\r\033[0m')#line:30
+     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages need for the script,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{OO0OO00O0OO0O0OO0}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
      time .sleep (0.1 )#line:32
 packages ()#line:33
