@@ -63,7 +63,7 @@ def install_packages ():#line:26
   for OO0O0O00OO0OO00OO in O00O0O000OO00OOO0 :#line:29
      sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{OO0O0O00OO0OO00OO}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
-     time .sleep (0.07 )#line:32
+     time .sleep (0.01 )#line:32
      os .system ("pip install pygame pywin32 requests colorama >nul 2>&1")#line:40
 install_packages ()#line:41
 time .sleep (0.001 )#line:42
@@ -156,7 +156,7 @@ def load_settings ():#line:128
     print (f"{LIGHT_WHITE}Pick {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}] {LIGHT_PURPLE}original jitter {LIGHT_WHITE}+ {LIGHT_CYAN}edited Time_Sleep\033[0m")#line:131
     O0O0O0OO0O0O00O0O =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:132
     if O0O0O0OO0O0O00O0O =="1":#line:133
-       return (24 ,24 ,24 ,28 ,0.013 )#line:134
+       return (24 ,24 ,24 ,28 ,0.01 )#line:134
     else :#line:135
        return (20 ,20 ,20 ,24 ,0.01 )#line:136
 def display_banner (O0OOOOOOO00O00OOO ,O0O00OOO0OOOO00OO ,O00O00000O0O00000 ,O0OO000OOO0000000 ):#line:137
@@ -168,7 +168,7 @@ def display_banner (O0OOOOOOO00O00OOO ,O0O00OOO0OOOO00OO ,O00O00000O0O00000 ,O0O
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:143
 def mouse_motion ():#line:144
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:145
-    time .sleep (0.0037 )#line:146
+    time .sleep (0.01 )#line:146
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,-move_left ,-move_up ,-29 ,-29 )#line:147
 def monitor_settings (O0O0OO00O0OO00OOO ):#line:148
     return O0O0OO00O0OO00OOO #line:149
