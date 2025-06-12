@@ -20,8 +20,8 @@ LIGHT_CYAN ="\033[1;36m"#line:19
 LIGHT_WHITE ="\033[1;37m"#line:20
 """Colors For Ui"""#line:21
 os .system ("cls")#line:22
-print (f"{LIGHT_WHITE}Color Bot {LIGHT_CYAN}Is Yet To Be Decided{LIGHT_WHITE}!, {LIGHT_PURPLE}Scripted is now controlled by {LIGHT_WHITE}@BisKit\033[0m")#line:23
-time .sleep (3.6 )#line:24
+print (f"{LIGHT_PURPLE}Scripted is now hosted by {LIGHT_WHITE}@BisKit\033[0m")#line:23
+time .sleep (1.9 )#line:24
 os .system ("cls")#line:25
 def install_packages ():#line:34
  O000O0OOO0OO00O00 =['/','-','\\','|']#line:27
@@ -30,9 +30,16 @@ def install_packages ():#line:34
      sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{O0OOOOOOO0O00OOOO}\r\033[0m')#line:30
      sys .stdout .flush ()#line:31
      time .sleep (0.1 )#line:32
- os.system(f"pip install pygame pywin32 colorama requests >nul 2>&1")
- time.sleep(0.01)
-install_packages ()#line:47
+
+
+try:
+    import pygame, colorama, win32api, requests
+    os.system("cls")
+except ImportError:
+    print("Installing needed packages")
+    os.system("pip install pygame pywin32 requests colorama >nul 2>&1")
+install_packages()
+time.sleep(0.001)
 import os #line:48
 import shutil #line:49
 import time #line:50
