@@ -25,17 +25,6 @@ os .system ("cls")#line:22
 print (f"{LIGHT_PURPLE}Scripted is now hosted by {LIGHT_WHITE}@BisKit\033[0m")#line:23
 time .sleep (1.9 )#line:24
 os .system ("cls")#line:25
-def install_packages ():#line:26
- time.sleep(0.1)
- O00O0O000OO00OOO0 =['/','-','\\','|']#line:27
- for OOOO0O00O0OO0O0O0 in range (3 ):#line:28
-  for OO0O0O00OO0OO00OO in O00O0O000OO00OOO0 :#line:29
-     
-     sys .stdout .write (f'\r{LIGHT_PURPLE}Checking if all the {LIGHT_WHITE}packages are already installed,{LIGHT_CYAN} please wait{LIGHT_WHITE}...  {LIGHT_PURPLE}{OO0O0O00OO0OO00OO}\r\033[0m')#line:30
-     sys .stdout .flush ()#line:31
-     time .sleep (0.01 )#line:32
-     os .system ("pip install pygame pywin32 requests colorama >nul 2>&1")#line:40
-install_packages ()#line:41
 time .sleep (0.001 )#line:42
 import os #line:43
 import shutil #line:44
