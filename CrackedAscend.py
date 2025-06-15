@@ -2,7 +2,6 @@ import os #line:1
 import time #line:2
 import sys #line:3
 import socket
-import threading
 """Colors For Ui"""#line:4
 BLACK ="\033[0;30m"#line:5
 RED ="\033[0;31m"#line:6
@@ -62,9 +61,9 @@ def loading ():#line:72
      time .sleep (0.01 )#line:78
 loading ()#line:79
 os .system ("cls")#line:80
-print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:81
-print (f"{LIGHT_PURPLE}:{LIGHT_PURPLE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit {LIGHT_CYAN}@Lonely{LIGHT_WHITE}{LIGHT_PURPLE} : \033[0m")#line:82
-print (f"{LIGHT_CYAN}***************************************************************************************************************")#line:83
+print (f"{LIGHT_CYAN}*********************************************************************************************************")#line:81
+print (f"{LIGHT_PURPLE}:{LIGHT_PURPLE}🐧 This Project Was A Reverse Engineering Script Edited And Decompiled By Controller Ascend, {LIGHT_GREEN}@BisKit   : \033[0m")#line:82
+print (f"{LIGHT_CYAN}*********************************************************************************************************")#line:83
 time .sleep (4 )#line:84
 os .system ('cls')#line:85
 def main2 ():#line:86
@@ -74,7 +73,7 @@ def main2 ():#line:86
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
 {LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:92
-  print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:93
+  print (f"{LIGHT_WHITE}         @BisKit\033[0m\n")#line:93
   O000O0O0000OO0OOO =input (f"""{LIGHT_CYAN}['\033[0m{LIGHT_PURPLE}Enter Password To {LIGHT_CYAN}Access{LIGHT_PURPLE}:{LIGHT_GREEN} """)#line:94
   if O000O0O0000OO0OOO =="9001":#line:95
     print ("")#line:96
@@ -117,14 +116,14 @@ def load_settings ():#line:128
     if O0O0O0OO0O0O00O0O =="1":#line:133
        return (24 ,24 ,24 ,28 ,0.01 )#line:134
     else :#line:135
-       return (24 ,24 ,24 ,28 ,0.01 )#line:136
+       return (33 ,33 ,33 ,34 ,0.01 )#line:136
 def display_banner (O0OOOOOOO00O00OOO ,O0O00OOO0OOOO00OO ,O00O00000O0O00000 ,O0OO000OOO0000000 ):#line:137
   print (f"""  {LIGHT_PURPLE}                                                            
           _____             _         _    _____                   _ 
 {LIGHT_CYAN}         |     |___ ___ ___| |_ ___ _| |  |  _  |___ ___ ___ ___ _| |
 {LIGHT_GREEN}         |   --|  _| .'|  _| '_| -_| . |  |     |_ -|  _| -_|   | . |
 {LIGHT_PURPLE}         |_____|_| |__,|___|_,_|___|___|  |__|__|___|___|___|_|_|___|""")#line:142
-  print (f"{LIGHT_WHITE}         @BisKit {LIGHT_CYAN}@Lonely\033[0m\n")#line:143
+  print (f"{LIGHT_WHITE}         @BisKit\033[0m\n")#line:143
 def mouse_motion ():#line:144
     win32api .mouse_event (win32con .MOUSEEVENTF_MOVE ,move_right ,move_down ,29 ,29 ,)#line:145
     time .sleep (0.0032 )#line:146
@@ -143,7 +142,7 @@ def wait_for_controller ():#line:150
     clear_screen ()#line:159
     display_banner (move_right ,move_left ,move_up ,move_down )#line:160
     print (f"\n{LIGHT_WHITE}                   Works For {YELLOW}Xbox {LIGHT_WHITE}+ {LIGHT_PURPLE}Ps4/5                             {LIGHT_CYAN}LT + LR{LIGHT_WHITE} or {LIGHT_PURPLE}L1 + L2\033[0m")#line:161
-    print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit \033[1;36m@Lonely\033[0m")#line:162
+    print (f"\n{LIGHT_WHITE}                                            Project By \033[1;32m@BisKit\033[0m")#line:162
     print (f"                                                ['{LIGHT_PURPLE}Jitter Activated'\033[0m]")#line:163
     return O00OOO00OOO00OO00 #line:164
 try :#line:165
